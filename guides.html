@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- 1. شريط الملاحة (Navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-75 sticky-top border-bottom border-secondary">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-info fs-4" href="index.html">🎮 Gamers Zone</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cheats.html">موسوعة الشفرات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold text-info" href="guides.html">الشرح والحلول</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. عنوان الصفحة -->
+    <div class="container text-center my-5">
+        <h1 class="fw-bold text-info mb-3"><i class="fa-solid fa-wrench me-2"></i> دليل شرح وحل مشاكل الألعاب</h1>
+        <p class="lead text-light opacity-75">حلول نهائية لأشهر أعطال الألعاب وشروحات احترافية لتشغيل المودات والأونلاين</p>
+    </div>
+
+    <div class="container mb-5">
+        
+        <!-- قسم حلول المشاكل التقنية -->
+        <h3 class="text-warning fw-bold mb-4 border-bottom border-warning pb-2">
+            <i class="fa-solid fa-triangle-exclamation me-2"></i> حلول الأعطال الشائعة (Fix Errors)
+        </h3>
+
+        <div class="accordion mb-5" id="fixesAccordion">
+            
+            <!-- مشكلة 1: ملفات DLL -->
+            <div class="accordion-item bg-dark text-white border border-secondary mb-3 rounded">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button bg-dark text-info fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        <i class="fa-solid fa-file-code me-2"></i> حل مشكلة نقص ملفات الـ DLL (مثل MSVCP140.dll أو d3dx9.dll)
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#fixesAccordion">
+                    <div class="accordion-body border-top border-secondary">
+                        <p class="mb-2">تظهر هذه المشكلة عند تشغيل اللعبة لأول مرة بسبب نقص حزم التشغيل الأساسية في نظام الويندوز. للحل اتبع الآتي:</p>
+                        <ol class="mb-0">
+                            <li class="mb-2">حمل وقم بتثبيت حزمة <strong>Visual C++ Redistributable All-in-One</strong>.</li>
+                            <li class="mb-2">تأكد من تثبيت مكتبة <strong>DirectX End-User Runtime</strong> لتعريف ملفات الجرافيكس.</li>
+                            <li>أعد تشغيل الكمبيوتر وستعمل اللعبة بنجاح دون الحاجة لتحميل ملفات DLL فردية من مواقع غير موثوقة.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- مشكلة 2: اللاج وضعف الـ FPS -->
+            <div class="accordion-item bg-dark text-white border border-secondary mb-3 rounded">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button bg-dark text-warning fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        <i class="fa-solid fa-gauge-high me-2"></i> تسريع الألعاب ورفع الـ FPS وحل التقطيع (Lag)
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#fixesAccordion">
+                    <div class="accordion-body border-top border-secondary">
+                        <ul class="mb-0">
+                            <li class="mb-2">تفعيل <strong>Game Mode</strong> في إعدادات الويندوز للتركيز على أدوات اللعبة.</li>
+                            <li class="mb-2">ضبط إعدادات كارت الشاشة على <strong>High Performance</strong> من لوحة تحكم NVIDIA أو AMD.</li>
+                            <li class="mb-2">إغلاق البرامج التي تعمل في الخلفية من خلال الـ <strong>Task Manager</strong> قبل فتح اللعبة.</li>
+                            <li>تقليل إعدادات <strong>Shadows</strong> و <strong>Anti-Aliasing</strong> من داخل إعدادات الجرافيكس باللعبة.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- مشكلة 3: الخروج المفاجئ Crash -->
+            <div class="accordion-item bg-dark text-white border border-secondary mb-3 rounded">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button bg-dark text-danger fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                        <i class="fa-solid fa-bug me-2"></i> حل مشكلة الشاشة السوداء أو الخروج المفاجئ (Crash on Launch)
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#fixesAccordion">
+                    <div class="accordion-body border-top border-secondary">
+                        <p class="mb-2">إذا كانت اللعبة تفتح ثم تغلق تلقائياً، يرجى تجربة الخطوات التالية:</p>
+                        <ol class="mb-0">
+                            <li class="mb-2">تشغيل اللعبة كمسؤول: اضغط كليك يمين على ملف اللعبة واختر <strong>Run as Administrator</strong>.</li>
+                            <li class="mb-2">تفعيل وضع التوافق (Compatibility Mode) مع Windows 7 أو Windows 8.</li>
+                            <li>تحديث تعريف كارت الشاشة لأحدث إصدار مثبت.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- قسم شروحات وتعديلات الألعاب -->
+        <h3 class="text-info fw-bold mb-4 border-bottom border-info pb-2 mt-5">
+            <i class="fa-solid fa-book-open me-2"></i> شرح وطرق تشغيل الألعاب
+        </h3>
+
+        <div class="row g-4">
+            
+            <!-- كارت GTA -->
+            <div class="col-md-4">
+                <div class="card bg-dark text-white h-100 border border-info shadow">
+                    <div class="card-body">
+                        <h5 class="card-title text-info fw-bold mb-3"><i class="fa-solid fa-car me-2"></i> تركيب مودات GTA San Andreas</h5>
+                        <p class="card-text text-light opacity-75 small">
+                            شرح كامل لطريقة تركيب مكتبة CLEO 4 لتركيب مودات السيارات، الجرافيكس، وحزمة Widescreen Fix لضبط أبعاد الشاشة الحديثة.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- كارت Need for Speed -->
+            <div class="col-md-4">
+                <div class="card bg-dark text-white h-100 border border-danger shadow">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger fw-bold mb-3"><i class="fa-solid fa-network-wired me-2"></i> تشغيل NFS Most Wanted أونلاين</h5>
+                        <p class="card-text text-light opacity-75 small">
+                            كيفية الربط مع الأصدقاء واللعب الجماعي شبكة (LAN) عن طريق شبكات V-LAN مثل Radmin VPN مع ضبط ملفات السيرفر.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- كارت Minecraft -->
+            <div class="col-md-4">
+                <div class="card bg-dark text-white h-100 border border-warning shadow">
+                    <div class="card-body">
+                        <h5 class="card-title text-warning fw-bold mb-3"><i class="fa-solid fa-cubes me-2"></i> زيادة فريمات Minecraft</h5>
+                        <p class="card-text text-light opacity-75 small">
+                            دليل تركيب مودات تحسين الأداء مثل OptiFine أو Sodium مع طريقة تخصيص الـ RAM للعبة لضمان أعلى ثبات للأداء.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer class="text-center text-light opacity-75 py-4 border-top border-secondary mt-5">
+        <p class="mb-0 fs-5 fw-bold text-info">Created by Antony | By  Little Programmer 2026-2027</p>
+    </footer>
+    <!-- Bootstrap 5 JS Bundle (مهم جداً لتشغيل فتح وإغلاق كروت الأعطال Accordion) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
