@@ -35,7 +35,7 @@
     <!-- 2. عنوان الصفحة -->
     <div class="container text-center my-5">
         <h1 class="fw-bold text-info mb-3"><i class="fa-solid fa-wrench me-2"></i> دليل شرح وحل مشاكل الألعاب</h1>
-        <p class="lead text-light opacity-75">حلول نهائية لأشهر أعطال الألعاب وشروحات احترافية لتشغيل المودات والأونلاين</p>
+        <p class="lead text-light opacity-75">حلول نهائية لأشهر أعطال الألعاب وشرح احترافية لتشغيل المودات والأونلاين</p>
     </div>
 
     <div class="container mb-5">
@@ -48,7 +48,7 @@
         <div class="accordion mb-5" id="fixesAccordion">
             
             <!-- مشكلة 1: ملفات DLL -->
-            <div class="accordion-item bg-dark text-white border border-secondary mb-3 rounded">
+<div class="accordion-item bg-dark text-white border border-secondary mb-3 rounded">
                 <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button bg-dark text-info fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
                         <i class="fa-solid fa-file-code me-2"></i> حل مشكلة نقص ملفات الـ DLL (مثل MSVCP140.dll أو d3dx9.dll)
@@ -104,7 +104,44 @@
                 </div>
             </div>
 
+            <!-- مشكلة 4: تجميد اللعبة (Freezing) - جديد -->
+            <div class="accordion-item bg-dark text-white border border-secondary mb-3 rounded">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button bg-dark text-success fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                        <i class="fa-solid fa-snowflake me-2"></i> حل مشكلة تجمد اللعبة فجأة أثناء اللعب (Game Freezing)
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#fixesAccordion">
+                    <div class="accordion-body border-top border-secondary">
+                        <ul class="mb-0">
+                            <li class="mb-2">تنظيف الملفات المؤقتة للنظام عن طريق مسح مجلدات <strong>Temp</strong> و <strong>%temp%</strong>.</li>
+                            <li class="mb-2">التحقق من سلامة ملفات اللعبة من خلال المنصة المشغلة لها (مثل عمل <strong>Verify files</strong> على Steam أو Epic Games).</li>
+                            <li>تأكد من عدم ارتفاع درجة حرارة المعالج أو كارت الشاشة أثناء الضغط.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- مشكلة 5: حظر جدار الحماية (Antivirus Block) - جديد -->
+            <div class="accordion-item bg-dark text-white border border-secondary mb-3 rounded">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button bg-dark text-secondary fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" style="color: #adb5bd !important;">
+                        <i class="fa-solid fa-shield-halved me-2"></i> حل مشكلة عدم فتح اللعبة نهائياً بسبب جدار الحماية
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#fixesAccordion">
+                    <div class="accordion-body border-top border-secondary">
+                        <ol class="mb-0">
+                            <li class="mb-2">إضافة مجلد اللعبة إلى قائمة الاستثناءات (Exclusions) في برنامج <strong>Windows Defender</strong> أو الأنتي فيرس الخاص بك.</li>
+                            <li class="mb-2">السماح لملف اللعبة التنفيذي (.exe) بالمرور عبر جدار الحماية للويندوز (Firewall).</li>
+                            <li>تأكد من عدم قيام برنامج الحماية بحذف ملف الـ crack أو ملف تشغيل اللعبة الأساسي بالخطأ.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
 
         <!-- قسم شروحات وتعديلات الألعاب -->
         <h3 class="text-info fw-bold mb-4 border-bottom border-info pb-2 mt-5">
