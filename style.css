@@ -36,7 +36,7 @@ h1{
 .ticker-move {
   display: flex;
   width: 100%;
-  animation: ticker 50s linear infinite;
+  animation: ticker 40s linear infinite;
 }
 .ticker-item {
   white-space: nowrap;
@@ -45,8 +45,8 @@ h1{
   font-weight: bold;
 }
 @keyframes ticker {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(510%); }
 }
 h4{
     color: green;
