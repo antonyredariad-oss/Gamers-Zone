@@ -8,11 +8,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- 1. شريط الملاحة (Navbar) -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-75 sticky-top border-bottom border-secondary">
-        <div class="container">
-            <!-- الشريط العلوي الشامل للموقع -->
 <div class="ticker-wrap">
   <div class="ticker-move">
     
@@ -42,20 +37,19 @@
 
   </div>
 </div>
+    <!-- 1. شريط الملاحة (Navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-75 sticky-top border-bottom border-secondary">
+        <div class="container">
              <a class="navbar-brand fw-bold text-info fs-4" href="index.html">🎮 Gamers Zone</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">الرئيسية</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active fw-bold text-info" href="cheats.html">موسوعة الشفرات</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="guides.html">الشرح والحلول</a>
+        <div class="nav-links">
+            <a href="index.html">الرئيسية</a>
+            <a href="guides.html">حلول مشاكل الألعاب</a>
+            <a href="cheats.html" class="active">شفرات الألعاب</a>
+            <a href="reviews.html">المراجعات</a>
+            <a href="requirements.html">متطلبات التشغيل</a>
                     </li>
                 </ul>
             </div>
@@ -294,6 +288,46 @@
                         </table>
                     </div>
                 </div>
+                <br>
+                <!-- لعبة 3: Minecraft -->
+        <div class="req-card p-4 mb-4">
+            <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap">
+                <h3 class="fw-bold text-warning mb-0"><i class="bi bi-box-seam"></i> Minecraft</h3>
+                <span class="badge badge-low fs-6 mt-2 mt-md-0">تناسب جميع الأجهزة (Low-End)</span>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-bordered table-dark table-hover mb-0 align-middle">
+                    <thead>
+                        <tr class="table-secondary text-dark text-center">
+                            <th>المكون (Component)</th>
+                            <th>الحد الأدنى (Minimum)</th>
+                            <th>الموصى به (Recommended)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="fw-bold text-neon"><i class="bi bi-cpu"></i> المعالج (CPU)</td>
+                            <td>Intel Core i3-3210</td>
+                            <td>Intel Core i5-4690</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold text-neon"><i class="bi bi-memory"></i> الرامات (RAM)</td>
+                            <td>4 GB</td>
+                            <td>8 GB</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold text-neon"><i class="bi bi-gpu-card"></i> كارت الشاشة (GPU)</td>
+                            <td>Intel HD Graphics 4000</td>
+                            <td>NVIDIA GeForce 700 Series</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold text-neon"><i class="bi bi-hdd-fill"></i> المساحة المطلوبة</td>
+                            <td colspan="2" class="text-center">4 GB (مع مساحة إضافية لللعوالم والـ Mods)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
             </div>
 
             <!-- ================= 🏎️ قسم NEED FOR SPEED SERIES ================= -->
