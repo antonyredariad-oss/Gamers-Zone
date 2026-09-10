@@ -41,12 +41,19 @@ h1{
 .ticker-item {
   white-space: nowrap;
   padding: 0 2rem;
-  color: #00d2ff;
+background: linear-gradient(135deg, #FFE07D 0%, #F5AF19 45%, #E65C00 70%, #FFF099 100%);
+border-radius: 100px;
   font-weight: bold;
 }
 @keyframes ticker {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(510%); }
+  0% { 
+
+    transform: translateX(-100%); 
+}
+  100% {
+
+    transform: translateX(165%); 
+}
 }
 h4{
     color: green;
@@ -390,3 +397,4 @@ body {
             border-color: #00f2fe;
             box-shadow: 0 0 10px rgba(0, 242, 254, 0.4);
         }
+        
