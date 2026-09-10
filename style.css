@@ -36,7 +36,7 @@ h1{
 .ticker-move {
   display: flex;
   width: 100%;
-  animation: ticker 40s linear infinite;
+  animation: ticker 25s linear infinite;
 }
 .ticker-item {
   white-space: nowrap;
@@ -52,7 +52,7 @@ border-radius: 100px;
 }
   100% {
 
-    transform: translateX(165%); 
+    transform: translateX(250%); 
 }
 }
 h4{
