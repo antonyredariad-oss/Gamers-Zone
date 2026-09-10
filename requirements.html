@@ -3,13 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>متطلبات تشغيل الألعاب - Gamers Zone</title>
-
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <!-- Custom CSS -->
+    <title>متطلبات تشغيل الألعاب | Gamers Zone</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 
     <style>
@@ -44,6 +39,8 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             padding-bottom: 12px;
             margin-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
         }
 
         .specs-box {
@@ -89,47 +86,66 @@
             border: 1px solid #00f2fe;
             color: #fff;
             border-radius: 8px;
-            padding: 10px 15px;
+            padding: 12px 18px;
         }
 
         .search-input:focus {
             background-color: #13172b;
             color: #fff;
             border-color: #00f2fe;
-            box-shadow: 0 0 10px rgba(0, 242, 254, 0.4);
+            box-shadow: 0 0 12px rgba(0, 242, 254, 0.4);
         }
     </style>
 </head>
 <body>
 
-    <!-- الناف بار الموحد -->
-    <nav class="my-custom-nav">
-        <div class="nav-container">
-            <a href="index.html" class="nav-logo">Gamers Zone</a>
-            <div class="nav-links">
-                <a href="index.html">الرئيسية</a>
-                <a href="solutions.html">حلول مشاكل الألعاب</a>
-                <a href="cheats.html">شفرات الألعاب</a>
-                <a href="reviews.html">المراجعات</a>
-                <a href="requirements.html" class="active">متطلبات التشغيل</a>
+    <!-- النافبار المتجاوب مع الموبايل -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-info fs-4" href="index.html">🎮 Gamers Zone</a>
+            <button class="navbar-toggler border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="solutions.html">حلول مشاكل الألعاب</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="cheats.html">شفرات الألعاب</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="reviews.html">المراجعات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-info fw-bold" href="requirements.html">متطلبات التشغيل</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
 
     <!-- الهيدر وشريط البحث -->
-    <div class="container my-5">
+    <main class="container my-4 my-md-5">
         <div class="text-center mb-4">
-            <h1 class="fw-bold text-white mb-2">💻 متطلبات تشغيل الألعاب</h1>
-            <p class="text-secondary">اعرف هل جهازك يقدر يشغل اللعبة ولا محتاج ترقية (الحد الأدنى والموصى به)</p>
+            <h1 class="fw-bold text-white mb-2 fs-2 fs-md-1">
+                <i class="fa-solid fa-laptop-code text-info me-2"></i> متطلبات تشغيل الألعاب
+            </h1>
+            <p class="text-secondary fs-6 fs-md-5">اعرف هل جهازك يقدر يشغل اللعبة ولا محتاج ترقية (الحد الأدنى والموصى به)</p>
+            
         </div>
+
         <!-- قائمة متطلبات الألعاب -->
         <div id="gamesList">
 
             <!-- 1. Euro Truck Simulator 2 -->
             <div class="req-card game-item">
                 <div class="req-title">
-                    <h3>Euro Truck Simulator 2</h3>
-                    <span class="badge bg-primary">PC</span>
+                    <h3 class="m-0 fs-4">Euro Truck Simulator 2</h3>
+                    <span class="badge bg-primary">محاكاة قيادة</span>
                 </div>
                 <div class="row g-3">
                     <div class="col-md-6">
@@ -162,7 +178,7 @@
             <!-- 2. GTA San Andreas -->
             <div class="req-card game-item">
                 <div class="req-title">
-                    <h3>GTA San Andreas</h3>
+                    <h3 class="m-0 fs-4">GTA San Andreas</h3>
                     <span class="badge bg-success">خفيفة جداً</span>
                 </div>
                 <div class="row g-3">
@@ -185,7 +201,7 @@
                                 <li><b>المعالج:</b> Intel Pentium 4 / AMD Athlon XP</li>
                                 <li><b>الرامات:</b> 512 MB RAM</li>
                                 <li><b>كرت الشاشة:</b> 128 MB GeForce 6 series / Radeon 9000</li>
-                                <li><b>نظام التشغيل:</b> Windows 10</li>
+                                <li><b>نظام التشغيل:</b> Windows 10 / 11</li>
                                 <li><b>المساحة:</b> 5 GB</li>
                             </ul>
                         </div>
@@ -196,8 +212,8 @@
             <!-- 3. Minecraft -->
             <div class="req-card game-item">
                 <div class="req-title">
-                    <h3>Minecraft</h3>
-                    <span class="badge bg-info text-dark">متوسطة</span>
+                    <h3 class="m-0 fs-4">Minecraft</h3>
+                    <span class="badge bg-info text-dark">بناء وإبداع</span>
                 </div>
                 <div class="row g-3">
                     <div class="col-md-6">
@@ -230,8 +246,8 @@
             <!-- 4. BeamNG.drive -->
             <div class="req-card game-item">
                 <div class="req-title">
-                    <h3>BeamNG.drive</h3>
-                    <span class="badge bg-warning text-dark">تحتاج معالج قوي</span>
+                    <h3 class="m-0 fs-4">BeamNG.drive</h3>
+                    <span class="badge bg-warning text-dark">محاكاة حوادث</span>
                 </div>
                 <div class="row g-3">
                     <div class="col-md-6">
@@ -264,7 +280,7 @@
             <!-- 5. Roblox -->
             <div class="req-card game-item">
                 <div class="req-title">
-                    <h3>Roblox</h3>
+                    <h3 class="m-0 fs-4">Roblox</h3>
                     <span class="badge bg-success">خفيفة</span>
                 </div>
                 <div class="row g-3">
@@ -294,856 +310,83 @@
                     </div>
                 </div>
             </div>
-<!-- 1. Euro Truck Simulator 2 -->
-<div class="req-card game-item">
-    <div class="req-title">
-        <h3>Euro Truck Simulator 2</h3>
-        <span class="badge bg-primary">محاكاة قيادة</span>
-    </div>
-    <div class="row g-3">
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-min">⚠️ الحد الأدنى (Minimum):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i5-6400 / AMD Ryzen 3 1200</li>
-                    <li><b>الرامات:</b> 8 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 660 / AMD Radeon HD 7870</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 (64-bit)</li>
-                    <li><b>المساحة:</b> 25 GB</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-rec">✅ الموصى به (Recommended):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i5-9600K / AMD Ryzen 5 3600</li>
-                    <li><b>الرامات:</b> 12 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 1660 Ti / AMD Radeon RX 590</li>
-                    <li><b>نظام التشغيل:</b> Windows 11 (64-bit)</li>
-                    <li><b>المساحة:</b> 25 GB SSD</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- 2. GTA San Andreas -->
-<div class="req-card game-item">
-    <div class="req-title">
-        <h3>GTA San Andreas</h3>
-        <span class="badge bg-success">خفيفة جداً</span>
-    </div>
-    <div class="row g-3">
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-min">⚠️ الحد الأدنى (Minimum):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Pentium III / AMD Athlon 1 GHz</li>
-                    <li><b>الرامات:</b> 256 MB RAM</li>
-                    <li><b>كرت الشاشة:</b> 64 MB DirectX 8.1</li>
-                    <li><b>نظام التشغيل:</b> Windows 7 / 8 / 10</li>
-                    <li><b>المساحة:</b> 4.7 GB</li>
-                </ul>
+            <!-- 6. Microsoft Flight Simulator -->
+            <div class="req-card game-item">
+                <div class="req-title">
+                    <h3 class="m-0 fs-4">Microsoft Flight Simulator</h3>
+                    <span class="badge bg-danger">جرافيك عالي</span>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="specs-box">
+                            <div class="specs-title-min">⚠️ الحد الأدنى (Minimum):</div>
+                            <ul class="specs-list">
+                                <li><b>المعالج:</b> Intel Core i5-4460 / AMD Ryzen 3 1200</li>
+                                <li><b>الرامات:</b> 8 GB RAM</li>
+                                <li><b>كرت الشاشة:</b> NVIDIA GTX 770 / AMD Radeon RX 570</li>
+                                <li><b>نظام التشغيل:</b> Windows 10 (64-bit)</li>
+                                <li><b>المساحة:</b> 150 GB</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="specs-box">
+                            <div class="specs-title-rec">✅ الموصى به (Recommended):</div>
+                            <ul class="specs-list">
+                                <li><b>المعالج:</b> Intel Core i7-9800X / AMD Ryzen 7 2700X</li>
+                                <li><b>الرامات:</b> 16 GB RAM</li>
+                                <li><b>كرت الشاشة:</b> NVIDIA RTX 2080 / AMD Radeon VII</li>
+                                <li><b>نظام التشغيل:</b> Windows 11 (64-bit)</li>
+                                <li><b>المساحة:</b> 150 GB SSD</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-rec">✅ الموصى به (Recommended):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Pentium 4 / AMD Athlon XP</li>
-                    <li><b>الرامات:</b> 512 MB RAM</li>
-                    <li><b>كرت الشاشة:</b> 128 MB GeForce 6 Series</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 / 11</li>
-                    <li><b>المساحة:</b> 5 GB</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- 3. Minecraft -->
-<div class="req-card game-item">
-    <div class="req-title">
-        <h3>Minecraft</h3>
-        <span class="badge bg-info text-dark">بناء وإبداع</span>
-    </div>
-    <div class="row g-3">
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-min">⚠️ الحد الأدنى (Minimum):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i3-3210 / AMD A8-7600</li>
-                    <li><b>الرامات:</b> 4 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> Intel HD Graphics 4000 / AMD Radeon R5</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 (64-bit)</li>
-                    <li><b>المساحة:</b> 4 GB</li>
-                </ul>
+            <!-- 7. Car Mechanic Simulator 2021 -->
+            <div class="req-card game-item">
+                <div class="req-title">
+                    <h3 class="m-0 fs-4">Car Mechanic Simulator 2021</h3>
+                    <span class="badge bg-primary">محاكاة صيانة</span>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="specs-box">
+                            <div class="specs-title-min">⚠️ الحد الأدنى (Minimum):</div>
+                            <ul class="specs-list">
+                                <li><b>المعالج:</b> Intel Core i5-4690 / AMD FX-8350</li>
+                                <li><b>الرامات:</b> 8 GB RAM</li>
+                                <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 760 2GB</li>
+                                <li><b>نظام التشغيل:</b> Windows 10 (64-bit)</li>
+                                <li><b>المساحة:</b> 35 GB</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="specs-box">
+                            <div class="specs-title-rec">✅ الموصى به (Recommended):</div>
+                            <ul class="specs-list">
+                                <li><b>المعالج:</b> Intel Core i5-9400F / AMD Ryzen 5 2600</li>
+                                <li><b>الرامات:</b> 16 GB RAM</li>
+                                <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 1070 8GB</li>
+                                <li><b>نظام التشغيل:</b> Windows 10 / 11</li>
+                                <li><b>المساحة:</b> 35 GB SSD</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-rec">✅ الموصى به (Recommended):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i5-4690 / AMD A10-7800</li>
-                    <li><b>الرامات:</b> 8 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce 700 Series / AMD Radeon R9</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 / 11</li>
-                    <li><b>المساحة:</b> 4 GB SSD</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- 4. BeamNG.drive -->
-<div class="req-card game-item">
-    <div class="req-title">
-        <h3>BeamNG.drive</h3>
-        <span class="badge bg-warning text-dark">محاكاة حوادث</span>
-    </div>
-    <div class="row g-3">
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-min">⚠️ الحد الأدنى (Minimum):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i3-6300 / AMD FX-6300</li>
-                    <li><b>الرامات:</b> 16 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 750 Ti / AMD Radeon HD 7870</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 (64-bit)</li>
-                    <li><b>المساحة:</b> 45 GB</li>
-                </ul>
-            </div>
         </div>
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-rec">✅ الموصى به (Recommended):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i7-7700K / AMD Ryzen 7 1700X</li>
-                    <li><b>الرامات:</b> 32 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 1070 / AMD Radeon RX Vega 56</li>
-                    <li><b>نظام التشغيل:</b> Windows 11</li>
-                    <li><b>المساحة:</b> 50 GB SSD</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
+    </main>
 
-<!-- 5. Microsoft Flight Simulator -->
-<div class="req-card game-item">
-    <div class="req-title">
-        <h3>Microsoft Flight Simulator</h3>
-        <span class="badge bg-danger">جرافيك عالي</span>
-    </div>
-    <div class="row g-3">
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-min">⚠️ الحد الأدنى (Minimum):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i5-4460 / AMD Ryzen 3 1200</li>
-                    <li><b>الرامات:</b> 8 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GTX 770 / AMD Radeon RX 570</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 (64-bit)</li>
-                    <li><b>المساحة:</b> 150 GB</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-rec">✅ الموصى به (Recommended):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i7-9800X / AMD Ryzen 7 2700X</li>
-                    <li><b>الرامات:</b> 16 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA RTX 2080 / AMD Radeon VII</li>
-                    <li><b>نظام التشغيل:</b> Windows 11 (64-bit)</li>
-                    <li><b>المساحة:</b> 150 GB SSD</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
+    <!-- الفوتر -->
+    <footer class="text-center text-light opacity-75 py-4 border-top border-secondary mt-5">
+        <p class="mb-0 fs-6 fs-md-5 fw-bold text-info">Created by Antony | By Little Programmer 2026-2027</p>
+    </footer>
 
-<!-- 6. Car Mechanic Simulator 2021 -->
-<div class="req-card game-item">
-    <div class="req-title">
-        <h3>Car Mechanic Simulator 2021</h3>
-        <span class="badge bg-primary">محاكاة صيانة</span>
-    </div>
-    <div class="row g-3">
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-min">⚠️ الحد الأدنى (Minimum):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i5-4690 / AMD Ryzen 3 1200</li>
-                    <li><b>الرامات:</b> 8 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 760 2GB</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 (64-bit)</li>
-                    <li><b>المساحة:</b> 35 GB</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-rec">✅ الموصى به (Recommended):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i5-8400 / AMD Ryzen 5 2600</li>
-                    <li><b>الرامات:</b> 16 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 1070 8GB</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 / 11</li>
-                    <li><b>المساحة:</b> 35 GB SSD</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- 7. Assetto Corsa -->
-<div class="req-card game-item">
-    <div class="req-title">
-        <h3>Assetto Corsa</h3>
-        <span class="badge bg-primary">محاكاة سباقات</span>
-    </div>
-    <div class="row g-3">
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-min">⚠️ الحد الأدنى (Minimum):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> AMD Athlon X2 2.8 GHz / Intel Core 2 Duo 2.4 GHz</li>
-                    <li><b>الرامات:</b> 2 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GT 460 / AMD Radeon HD 6450</li>
-                    <li><b>نظام التشغيل:</b> Windows 7 / 8.1 / 10</li>
-                    <li><b>المساحة:</b> 15 GB</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-rec">✅ الموصى به (Recommended):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> AMD Six-Core CPU / Intel Quad-Core CPU</li>
-                    <li><b>الرامات:</b> 6 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 970 / AMD Radeon R9 290</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 (64-bit)</li>
-                    <li><b>المساحة:</b> 30 GB SSD</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- 8. Farming Simulator 22 -->
-<div class="req-card game-item">
-    <div class="req-title">
-        <h3>Farming Simulator 22</h3>
-        <span class="badge bg-secondary">محاكاة زراعة</span>
-    </div>
-    <div class="row g-3">
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-min">⚠️ الحد الأدنى (Minimum):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i5-3330 / AMD FX-8320</li>
-                    <li><b>الرامات:</b> 8 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 1050 Ti / AMD Radeon RX 470</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 (64-bit)</li>
-                    <li><b>المساحة:</b> 35 GB</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-rec">✅ الموصى به (Recommended):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i5-5675C / AMD Ryzen 5 1600</li>
-                    <li><b>الرامات:</b> 16 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 1060 / AMD Radeon RX 5700</li>
-                    <li><b>نظام التشغيل:</b> Windows 11 (64-bit)</li>
-                    <li><b>المساحة:</b> 35 GB SSD</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- 9. Little Nightmares II -->
-<div class="req-card game-item">
-    <div class="req-title">
-        <h3>Little Nightmares II</h3>
-        <span class="badge bg-dark">غموض وترقب</span>
-    </div>
-    <div class="row g-3">
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-min">⚠️ الحد الأدنى (Minimum):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i5-2300 / AMD FX-4350</li>
-                    <li><b>الرامات:</b> 4 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 570 / AMD Radeon HD 7850</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 (64-bit)</li>
-                    <li><b>المساحة:</b> 10 GB</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-rec">✅ الموصى به (Recommended):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i7-3770 / AMD FX-8350</li>
-                    <li><b>الرامات:</b> 4 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 760 / AMD Radeon HD 7870</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 / 11</li>
-                    <li><b>المساحة:</b> 10 GB</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- 10. INSIDE -->
-<div class="req-card game-item">
-    <div class="req-title">
-        <h3>INSIDE</h3>
-        <span class="badge bg-success">خفيفة وألغاز</span>
-    </div>
-    <div class="row g-3">
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-min">⚠️ الحد الأدنى (Minimum):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core 2 Quad Q6600 2.4 GHz / AMD FX-4300</li>
-                    <li><b>الرامات:</b> 4 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GT 630 / AMD Radeon HD 6570</li>
-                    <li><b>نظام التشغيل:</b> Windows 7 / 8 / 10 (64-bit)</li>
-                    <li><b>المساحة:</b> 3 GB</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-rec">✅ الموصى به (Recommended):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i5 3.3 GHz / AMD FX-8350</li>
-                    <li><b>الرامات:</b> 8 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 660 / AMD Radeon HD 7850</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 / 11</li>
-                    <li><b>المساحة:</b> 3 GB</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- 11. FNAF: Security Breach -->
-<div class="req-card game-item">
-    <div class="req-title">
-        <h3>FNAF: Security Breach</h3>
-        <span class="badge bg-warning text-dark">ترقب واستكشاف</span>
-    </div>
-    <div class="row g-3">
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-min">⚠️ الحد الأدنى (Minimum):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> AMD FX-4350 / Intel Core i5-6400</li>
-                    <li><b>الرامات:</b> 8 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 1050 Ti / AMD Radeon RX 470</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 (64-bit)</li>
-                    <li><b>المساحة:</b> 80 GB</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-rec">✅ الموصى به (Recommended):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i7-6700K / AMD Ryzen 5 3600</li>
-                    <li><b>الرامات:</b> 16 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 1060 6GB / AMD Radeon RX 580</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 / 11</li>
-                    <li><b>المساحة:</b> 80 GB SSD</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- 12. Subnautica -->
-<div class="req-card game-item">
-    <div class="req-title">
-        <h3>Subnautica</h3>
-        <span class="badge bg-info text-dark">بقاء وأعماق</span>
-    </div>
-    <div class="row g-3">
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-min">⚠️ الحد الأدنى (Minimum):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i3 / AMD FX-4300</li>
-                    <li><b>الرامات:</b> 8 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> Intel HD 4600 / NVIDIA GTX 550 Ti</li>
-                    <li><b>نظام التشغيل:</b> Windows 7 / 10 (64-bit)</li>
-                    <li><b>المساحة:</b> 20 GB</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-rec">✅ الموصى به (Recommended):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i5 / AMD Ryzen 5</li>
-                    <li><b>الرامات:</b> 8 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 960 / AMD Radeon R9 280</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 / 11</li>
-                    <li><b>المساحة:</b> 20 GB SSD</li>
-                </ul>
-            </div>
-        </div>
-        <!-- 13. Phasmophobia -->
-<div class="req-card game-item">
-    <div class="req-title">
-        <h3>Phasmophobia</h3>
-        <span class="badge bg-dark">تحقيق أونلاين</span>
-    </div>
-    <div class="row g-3">
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-min">⚠️ الحد الأدنى (Minimum):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i5-4590 / AMD FX 8350</li>
-                    <li><b>الرامات:</b> 8 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GTX 970 / AMD Radeon R9 290</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 (64-bit)</li>
-                    <li><b>المساحة:</b> 21 GB</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-rec">✅ الموصى به (Recommended):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i5-10600 / AMD Ryzen 5 3600</li>
-                    <li><b>الرامات:</b> 16 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA RTX 2060 / AMD Radeon RX 5700</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 / 11</li>
-                    <li><b>المساحة:</b> 21 GB SSD</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- 14. PowerWash Simulator -->
-<div class="req-card game-item">
-    <div class="req-title">
-        <h3>PowerWash Simulator</h3>
-        <span class="badge bg-primary">محاكاة تنظيف</span>
-    </div>
-    <div class="row g-3">
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-min">⚠️ الحد الأدنى (Minimum):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i5-6700 / AMD Ryzen 5 1500X</li>
-                    <li><b>الرامات:</b> 8 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 760 / AMD Radeon HD 7950</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 (64-bit)</li>
-                    <li><b>المساحة:</b> 6 GB</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-rec">✅ الموصى به (Recommended):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i7-7700K / AMD Ryzen 7 2700X</li>
-                    <li><b>الرامات:</b> 16 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 1060 / AMD Radeon RX 580</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 / 11</li>
-                    <li><b>المساحة:</b> 6 GB SSD</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- 15. Internet Cafe Simulator 2 -->
-<div class="req-card game-item">
-    <div class="req-title">
-        <h3>Internet Cafe Simulator 2</h3>
-        <span class="badge bg-secondary">إدارة سايبر</span>
-    </div>
-    <div class="row g-3">
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-min">⚠️ الحد الأدنى (Minimum):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> 2 GHz Dual Core CPU</li>
-                    <li><b>الرامات:</b> 4 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> Intel HD Graphics 4000 / NVIDIA GeForce GTX 950</li>
-                    <li><b>نظام التشغيل:</b> Windows 7 / 8 / 10</li>
-                    <li><b>المساحة:</b> 7 GB</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-rec">✅ الموصى به (Recommended):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> 2.5 GHz Quad Core CPU</li>
-                    <li><b>الرامات:</b> 8 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 1060 3GB</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 / 11</li>
-                    <li><b>المساحة:</b> 7 GB SSD</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- 16. Construction Simulator -->
-<div class="req-card game-item">
-    <div class="req-title">
-        <h3>Construction Simulator</h3>
-        <span class="badge bg-primary">معدات ثقيلة</span>
-    </div>
-    <div class="row g-3">
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-min">⚠️ الحد الأدنى (Minimum):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i5-10400F / AMD Ryzen 5 3600</li>
-                    <li><b>الرامات:</b> 8 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 960 4GB / AMD Radeon RX 470</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 (64-bit)</li>
-                    <li><b>المساحة:</b> 25 GB</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-rec">✅ الموصى به (Recommended):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i7-10700 / AMD Ryzen 7 3700X</li>
-                    <li><b>الرامات:</b> 16 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce RTX 2060 / AMD Radeon RX 5700</li>
-                    <li><b>نظام التشغيل:</b> Windows 11</li>
-                    <li><b>المساحة:</b> 25 GB SSD</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- 17. Hello Neighbor -->
-<div class="req-card game-item">
-    <div class="req-title">
-        <h3>Hello Neighbor</h3>
-        <span class="badge bg-warning text-dark">تخفي وترقب</span>
-    </div>
-    <div class="row g-3">
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-min">⚠️ الحد الأدنى (Minimum):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i5</li>
-                    <li><b>الرامات:</b> 6 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GTX 770</li>
-                    <li><b>نظام التشغيل:</b> Windows 7 / 8 / 10 (64-bit)</li>
-                    <li><b>المساحة:</b> 5 GB</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-rec">✅ الموصى به (Recommended):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i7</li>
-                    <li><b>الرامات:</b> 8 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GTX 1060 / GTX 980</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 / 11</li>
-                    <li><b>المساحة:</b> 5 GB SSD</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- 18. Pacific Drive -->
-<div class="req-card game-item">
-    <div class="req-title">
-        <h3>Pacific Drive</h3>
-        <span class="badge bg-dark">قيادة وبقاء</span>
-    </div>
-    <div class="row g-3">
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-min">⚠️ الحد الأدنى (Minimum):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i5-8600 / AMD Ryzen 5 2600</li>
-                    <li><b>الرامات:</b> 16 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 1060 6GB / AMD Radeon RX 580</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 (64-bit)</li>
-                    <li><b>المساحة:</b> 18 GB</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-rec">✅ الموصى به (Recommended):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i5-10600K / AMD Ryzen 5 5600X</li>
-                    <li><b>الرامات:</b> 16 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA RTX 2060 Super / AMD Radeon RX 6600 XT</li>
-                    <li><b>نظام التشغيل:</b> Windows 11</li>
-                    <li><b>المساحة:</b> 18 GB SSD</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- 19. Bus Simulator 21 -->
-<div class="req-card game-item">
-    <div class="req-title">
-        <h3>Bus Simulator 21</h3>
-        <span class="badge bg-primary">محاكاة حافلات</span>
-    </div>
-    <div class="row g-3">
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-min">⚠️ الحد الأدنى (Minimum):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i3-2120 / AMD FX-8370</li>
-                    <li><b>الرامات:</b> 8 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 760 / AMD Radeon HD 7870</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 (64-bit)</li>
-                    <li><b>المساحة:</b> 18 GB</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-rec">✅ الموصى به (Recommended):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i5-4460 / AMD FX-8350</li>
-                    <li><b>الرامات:</b> 12 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 970 / AMD Radeon R9 290</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 / 11</li>
-                    <li><b>المساحة:</b> 18 GB SSD</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- 20. House Flipper 2 -->
-<div class="req-card game-item">
-    <div class="req-title">
-        <h3>House Flipper 2</h3>
-        <span class="badge bg-secondary">تجديد وديكور</span>
-    </div>
-    <div class="row g-3">
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-min">⚠️ الحد الأدنى (Minimum):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> AMD Ryzen 5 1600 / Intel Core i5-8400</li>
-                    <li><b>الرامات:</b> 8 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> AMD Radeon RX 580 / NVIDIA GeForce GTX 1060</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 (64-bit)</li>
-                    <li><b>المساحة:</b> 20 GB</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-rec">✅ الموصى به (Recommended):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> AMD Ryzen 5 3600 / Intel Core i5-10600K</li>
-                    <li><b>الرامات:</b> 16 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> AMD Radeon RX 6700 XT / NVIDIA GeForce RTX 2070</li>
-                    <li><b>نظام التشغيل:</b> Windows 11</li>
-                    <li><b>المساحة:</b> 20 GB SSD</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-Subnautica
-<!-- 21. Cities: Skylines -->
-<div class="req-card game-item">
-    <div class="req-title">
-        <h3>Cities: Skylines</h3>
-        <span class="badge bg-primary">بناء مدن</span>
-    </div>
-    <div class="row g-3">
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-min">⚠️ الحد الأدنى (Minimum):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core 2 Duo 3.0 GHz / AMD Athlon 64 X2 6400+</li>
-                    <li><b>الرامات:</b> 4 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 260 / AMD Radeon HD 5670</li>
-                    <li><b>نظام التشغيل:</b> Windows 7 / 8.1 / 10 (64-bit)</li>
-                    <li><b>المساحة:</b> 4 GB</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-rec">✅ الموصى به (Recommended):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i5-3470 / AMD FX-6300</li>
-                    <li><b>الرامات:</b> 8 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 660 / AMD Radeon HD 7870</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 / 11</li>
-                    <li><b>المساحة:</b> 4 GB SSD</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- 22. Stray -->
-<div class="req-card game-item">
-    <div class="req-title">
-        <h3>Stray</h3>
-        <span class="badge bg-info text-dark">مغامرة وغامض</span>
-    </div>
-    <div class="row g-3">
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-min">⚠️ الحد الأدنى (Minimum):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i5-2300 / AMD FX-6350</li>
-                    <li><b>الرامات:</b> 8 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 650 Ti 2GB / AMD Radeon R7 360</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 (64-bit)</li>
-                    <li><b>المساحة:</b> 10 GB</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-rec">✅ الموصى به (Recommended):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i5-8400 / AMD Ryzen 5 2600</li>
-                    <li><b>الرامات:</b> 8 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 780 3GB / AMD Radeon R9 290</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 / 11</li>
-                    <li><b>المساحة:</b> 10 GB SSD</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- 23. PUBG Mobile (GameLoop PC) -->
-<div class="req-card game-item">
-    <div class="req-title">
-        <h3>PUBG Mobile (محاكي GameLoop)</h3>
-        <span class="badge bg-danger">باتل رويال</span>
-    </div>
-    <div class="row g-3">
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-min">⚠️ الحد الأدنى (Minimum):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Dual Core / AMD 1.8 GHz</li>
-                    <li><b>الرامات:</b> 4 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce 8600GT / AMD Radeon HD2600</li>
-                    <li><b>نظام التشغيل:</b> Windows 7 / 8 / 10</li>
-                    <li><b>المساحة:</b> 10 GB</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-rec">✅ الموصى به (Recommended):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i5-3470 / AMD Ryzen 3 1200</li>
-                    <li><b>الرامات:</b> 8 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 1050 Ti / AMD Radeon RX 570</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 / 11 (64-bit)</li>
-                    <li><b>المساحة:</b> 15 GB SSD</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- 24. Roblox -->
-<div class="req-card game-item">
-    <div class="req-title">
-        <h3>Roblox</h3>
-        <span class="badge bg-success">خفيفة وإبداع</span>
-    </div>
-    <div class="row g-3">
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-min">⚠️ الحد الأدنى (Minimum):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> 1.6 GHz Processor (Intel / AMD)</li>
-                    <li><b>الرامات:</b> 1 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> DirectX 10 / Shader Model 2.0 Support</li>
-                    <li><b>نظام التشغيل:</b> Windows 7 / 8 / 10 / 11</li>
-                    <li><b>المساحة:</b> 100 MB</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-rec">✅ الموصى به (Recommended):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Dual Core 2.0 GHz+</li>
-                    <li><b>الرامات:</b> 4 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce FX 5500 / ATI Radeon 9500</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 / 11</li>
-                    <li><b>المساحة:</b> 1 GB</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- 25. Red Dead Redemption 2 -->
-<div class="req-card game-item">
-    <div class="req-title">
-        <h3>Red Dead Redemption 2</h3>
-        <span class="badge bg-danger">عالم مفتوج وجرافيك قوي</span>
-    </div>
-    <div class="row g-3">
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-min">⚠️ الحد الأدنى (Minimum):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i5-2500K / AMD FX-6300</li>
-                    <li><b>الرامات:</b> 8 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 770 2GB / AMD Radeon R9 280 3GB</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 (64-bit)</li>
-                    <li><b>المساحة:</b> 150 GB</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="specs-box">
-                <div class="specs-title-rec">✅ الموصى به (Recommended):</div>
-                <ul class="specs-list">
-                    <li><b>المعالج:</b> Intel Core i7-4770K / AMD Ryzen 5 1500X</li>
-                    <li><b>الرامات:</b> 12 GB RAM</li>
-                    <li><b>كرت الشاشة:</b> NVIDIA GeForce GTX 1060 6GB / AMD Radeon RX 480 4GB</li>
-                    <li><b>نظام التشغيل:</b> Windows 10 / 11</li>
-                    <li><b>المساحة:</b> 150 GB SSD</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-    </div>
-</div>
-
-
-    <script src="bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

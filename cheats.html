@@ -7,77 +7,80 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<div class="ticker-wrap">
-  <div class="ticker-move">
-    
-    <div class="ticker-item">
-      <span class="badge bg-danger">NEW</span> 🔥 إضافة شفرات GTA San Andreas الجديدة بالكامل (سيارات، أسلحة، طائرات)
+<body class="bg-dark text-light">
+
+    <!-- الشريط الإخباري المتحرك -->
+    <div class="ticker-wrap bg-danger bg-opacity-10 border-bottom border-danger py-2 overflow-hidden">
+      <div class="ticker-move d-flex align-items-center gap-4 text-nowrap">
+        <div class="ticker-item">
+          <span class="badge bg-danger">NEW</span> 🔥 إضافة شفرات GTA San Andreas الجديدة بالكامل
+        </div>
+        <div class="ticker-item">
+          <span class="badge bg-primary">FIX</span> 💡 حل مشكلة الـ Lag بتقنيات مجربة
+        </div>
+        <div class="ticker-item">
+          <span class="badge bg-success">UPDATED</span> 🎮 أوامر وتعديلات Minecraft الجديدة متاحة الآن!
+        </div>
+        <div class="ticker-item">
+          🏆 الأكثر استخداماً: شفرة الصحة <kbd class="bg-dark border border-warning text-warning">HESOYAM</kbd> وشفرة الطائرة <kbd class="bg-dark border border-warning text-warning">OHDUDE</kbd>
+        </div>
+      </div>
     </div>
 
-    <div class="ticker-item">
-      <span class="badge bg-primary">FIX</span> 💡 حل مشكلة الـ Lag وتقطيع الفريمات (FPS) في Need for Speed Most Wanted
-    </div>
-
-    <div class="ticker-item">
-      <span class="badge bg-success">UPDATED</span> 🎮 أوامر وتعديلات Minecraft الجديدة أصبحت متاحة الآن!
-    </div>
-
-    <div class="ticker-item">
-      🏆 الأكثر استخداماً هذا الأسبوع: شفرة الصحة <kbd>HESOYAM</kbd> وشفرة الطائرة <kbd>OHDUDE</kbd>
-    </div>
-
-    <div class="ticker-item">
-      <span class="badge bg-info text-dark">FEATURE</span> 🚀 جديد: وجه الماوس على أي شفرة لرؤية السلاح أو السيارة 3D!
-    </div>
-
-    <div class="ticker-item">
-      <span class="badge bg-warning text-dark">TIP</span> ⚡ نصيحة: اضغط على كروت الألعاب لتقليبها ورؤية أسرار اللعبة
-    </div>
-
-  </div>
-</div>
-    <!-- 1. شريط الملاحة (Navbar) -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-75 sticky-top border-bottom border-secondary">
+    <!-- النافبار المتجاوب مع الموبايل -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary sticky-top">
         <div class="container">
-             <a class="navbar-brand fw-bold text-info fs-4" href="index.html">🎮 Gamers Zone</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand fw-bold text-info fs-4" href="index.html">🎮 Gamers Zone</a>
+            <button class="navbar-toggler border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-        <div class="nav-links">
-            <a href="index.html">الرئيسية</a>
-            <a href="guides.html">حلول مشاكل الألعاب</a>
-            <a href="cheats.html" class="active">شفرات الألعاب</a>
-            <a href="reviews.html">المراجعات</a>
-            <a href="requirements.html">متطلبات التشغيل</a>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="guides.html">حلول مشاكل الألعاب</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-info fw-bold" href="cheats.html">شفرات الألعاب</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="reviews.html">المراجعات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="requirements.html">متطلبات التشغيل</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- 2. عنوان الصفحة -->
-    <div class="container text-center my-5">
-        <h1 class="fw-bold text-info mb-3"><i class="fa-solid fa-bolt me-2"></i> أسرار وشفرات الألعاب</h1>
-        <p class="lead text-light opacity-75">أكبر مكتبة شفرات، أوامر، وأسرار لأشهر الألعاب</p>
-    </div>
+    <!-- عنوان الصفحة -->
+    <header class="container text-center my-4 my-md-5">
+        <h1 class="fw-bold text-info mb-3 fs-2 fs-md-1">
+            <i class="fa-solid fa-bolt me-2"></i> أسرار وشفرات الألعاب
+        </h1>
+        <p class="lead text-light opacity-75 fs-6 fs-md-5">أكبر مكتبة شفرات، أوامر، وأسرار لأشهر الألعاب</p>
+    </header>
 
-    <!-- 3. التبويبات الرئيسية والألعاب -->
-    <div class="container my-4">
-        <ul class="nav nav-pills justify-content-center gap-2 mb-4" id="pills-tab" role="tablist">
+    <!-- التبويبات الرئيسية بالألعاب -->
+    <main class="container my-4">
+        
+        <ul class="nav nav-pills d-flex flex-column flex-sm-row justify-content-center gap-2 mb-4" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link active rounded-pill fw-bold fs-5 px-4" id="gta-tab" data-bs-toggle="pill" data-bs-target="#gta" type="button">
+                <button class="nav-link active rounded-pill fw-bold fs-6 fs-md-5 px-4 w-100" id="gta-tab" data-bs-toggle="pill" data-bs-target="#gta" type="button">
                     <i class="fa-solid fa-car me-2"></i> GTA San Andreas 🚗
                 </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link rounded-pill fw-bold fs-5 px-4" id="mc-tab" data-bs-toggle="pill" data-bs-target="#mc" type="button">
+                <button class="nav-link rounded-pill fw-bold fs-6 fs-md-5 px-4 w-100" id="mc-tab" data-bs-toggle="pill" data-bs-target="#mc" type="button">
                     <i class="fa-solid fa-cubes me-2"></i> Minecraft Commands
                 </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link rounded-pill fw-bold fs-5 px-4" id="nfs-tab" data-bs-toggle="pill" data-bs-target="#nfs" type="button">
-                    <i class="fa-solid fa-gauge-high me-2"></i> Need For Speed Series
+                <button class="nav-link rounded-pill fw-bold fs-6 fs-md-5 px-4 w-100" id="nfs-tab" data-bs-toggle="pill" data-bs-target="#nfs" type="button">
+                    <i class="fa-solid fa-gauge-high me-2"></i> Need For Speed
                 </button>
             </li>
         </ul>
@@ -90,333 +93,157 @@
                     
                     <!-- 1. الصحة، الأسلحة والقدرات -->
                     <div class="col-12">
-                        <div class="card bg-dark text-white p-3 shadow border border-info">
-                            <h3 class="text-info fw-bold mb-3"><i class="fa-solid fa-heart-pulse me-2"></i> الصحة، الدرع، الأسلحة والقدرات</h3>
+                        <div class="card bg-dark text-white p-3 shadow border border-info rounded">
+                            <h3 class="text-info fw-bold mb-3 fs-4"><i class="fa-solid fa-heart-pulse me-2"></i> الصحة، الدرع، الأسلحة والقدرات</h3>
                             <div class="table-responsive">
                                 <table class="table table-dark table-hover align-middle mb-0">
                                     <thead>
                                         <tr class="table-secondary text-dark">
                                             <th>الوصف / التأثير</th>
-                                            <th>الشفرة (الكود)</th>
+                                            <th class="text-nowrap">الشفرة (الكود)</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr><td>صحة كاملة + درع + 250,000$ + تصليح السيارة</td><td><code class="fs-5 text-warning">HESOYAM</code></td></tr>
-                                        <tr><td>عدم الموت / صحة لا تنتهي (لا تؤثر بالرصاص والضرب)</td><td><code class="fs-5 text-warning">BAGUVIX</code></td></tr>
-                                        <tr><td>أكسجين ولا نهاية للتنفس تحت الماء</td><td><code class="fs-5 text-warning">CVWKXAM</code></td></tr>
-                                        <tr><td>عدم الجوع أبداً</td><td><code class="fs-5 text-warning">AEDUWNV</code></td></tr>
-                                        <tr><td>حزمة أسلحة 1 (أسلحة مشاة خفيفة)</td><td><code class="fs-5 text-warning">LXGIWYL</code></td></tr>
-                                        <tr><td>حزمة أسلحة 2 (أسلحة احترافية ثقيلة)</td><td><code class="fs-5 text-warning">PROFESSIONALSKIT</code></td></tr>
-                                        <tr><td>حزمة أسلحة 3 (أسلحة العصابات والرشاشات)</td><td><code class="fs-5 text-warning">UZUMYMW</code></td></tr>
-                                        <tr><td>ذخيرة لا تنتهي بدون إعادة تعبئة (Infinite Ammo)</td><td><code class="fs-5 text-warning">FULLCLIP</code></td></tr>
-                                        <tr><td>مستوى القنص والأسلحة لفل ماكس (Hitman Level)</td><td><code class="fs-5 text-warning">PROFESSIONALKILLER</code></td></tr>
-                                        <tr><td>عضلات وجسم قوي جداً (Max Muscle)</td><td><code class="fs-5 text-warning">JYSDSOD</code></td></tr>
-                                        <tr><td>جسم نحيف فوراً (Max Skinny)</td><td><code class="fs-5 text-warning">KVGYZQK</code></td></tr>
-                                        <tr><td>جسم سمين جداً (Max Fat)</td><td><code class="fs-5 text-warning">BTCDBCB</code></td></tr>
-                                        <tr><td>احترام العصابات ماكس (Max Respect)</td><td><code class="fs-5 text-warning">OGXSDAG</code></td></tr>
-                                        <tr><td>جاذبية للنساء ماكس (Max Sex Appeal)</td><td><code class="fs-5 text-warning">EHIBXQS</code></td></tr>
-                                        <tr><td>قفزة عالية جداً (Mega Jump)</td><td><code class="fs-5 text-warning">KANGAROO</code></td></tr>
-                                        <tr><td>لكمة الخارقة (Mega Punch)</td><td><code class="fs-5 text-warning">IAVENJQ</code></td></tr>
-                                        <tr><td>طاقة وتحمل لا ينتهي للجري والسباحة (Infinite Stamina)</td><td><code class="fs-5 text-warning">VKYPQCF</code></td></tr>
-                                        <tr><td>مهارة قيادة السيارات والتحكم لفل ماكس</td><td><code class="fs-5 text-warning">VQIMAHA</code></td></tr>
-                                        <tr><td>مهارة قيادة الدراجات النارية والهوائية لفل ماكس</td><td><code class="fs-5 text-warning">NATURALSPEED</code></td></tr>
-                                        <tr><td>مهارة الطيران وقيادة الطائرات لفل ماكس</td><td><code class="fs-5 text-warning">FLYINGTOSTUNT</code></td></tr>
-                                        <tr><td>نمط الأدرينالين (قوة بدنية مع تباطؤ الوقت)</td><td><code class="fs-5 text-warning">MUNASEF</code></td></tr>
-                                        <tr><td>السيارات تطير في الهواء عند زيادة السرعة</td><td><code class="fs-5 text-warning">CHITTYCHITTYBANGBANG</code></td></tr>
-                                        <tr><td>القيادة فوق الماء لجميع أنواع السيارات</td><td><code class="fs-5 text-warning">GKPNMQ</code></td></tr>
-                                        <tr><td>السيارات تنفجر بمجرد الاصطدام بها</td><td><code class="fs-5 text-warning">JCNRUAD</code></td></tr>
-                                        <tr><td>نيترو وسرعة فائقة لجميع السيارات في الشارع</td><td><code class="fs-5 text-warning">SPEEDFREAK</code></td></tr>
-                                        <tr><td>السيارات تطير بعيداً جداً عند الاصطدام بها</td><td><code class="fs-5 text-warning">BUBBLECARS</code></td></tr>
-                                        <tr><td>تفجير جميع السيارات المحيطة باللاعب فوراً</td><td><code class="fs-5 text-warning">CPKTNWT</code></td></tr>
-                                        <tr><td>التحكم والالتفاف المثالي للمركبات (Perfect Handling)</td><td><code class="fs-5 text-warning">STICKLIKEGLUE</code></td></tr>
-                                        <tr><td>القوارب واليخوت تطير في الهواء</td><td><code class="fs-5 text-warning">FLYINGFISH</code></td></tr>
-                                        <tr><td>جميع إشارات المرور خضراء دائماً</td><td><code class="fs-5 text-warning">ZEIIVG</code></td></tr>
-                                        <tr><td>السائقون في الشوارع يصبحون عدوانيين للغاية</td><td><code class="fs-5 text-warning">YLTEICZ</code></td></tr>
-                                        <tr><td>جميع السيارات في الشوارع تكتسي باللون الأسود</td><td><code class="fs-5 text-warning">IIDNYB</code></td></tr>
-                                        <tr><td>جميع السيارات في الشوارع تكتسي باللون الوردي</td><td><code class="fs-5 text-warning">LLQPFBN</code></td></tr>
-                                        <tr><td>شوارع فارغة تماماً من السيارات والمارة (مدينة أشباح)</td><td><code class="fs-5 text-warning">GHOSTTOWN</code></td></tr>
-                                        <tr><td>جميع السيارات في المدينة تصبح رياضية وسريعة</td><td><code class="fs-5 text-warning">EVERYONEISRICH</code></td></tr>
-                                        <tr><td>جميع السيارات في المدينة رخيصة وقديمة جداً</td><td><code class="fs-5 text-warning">EVERYONEISPOOR</code></td></tr>
-                                        <tr><td>الطقس مشمس وصافي وجميل جداً</td><td><code class="fs-5 text-warning">PLEASANTLYWARM</code></td></tr>
-                                        <tr><td>الطقس ممطر بغزارة مع عواصف رعدية</td><td><code class="fs-5 text-warning">SCOTTISHSUMMER</code></td></tr>
-                                        <tr><td>طقس ضبابي كثيف يحجب الرؤية</td><td><code class="fs-5 text-warning">CFVFGMJ</code></td></tr>
-                                        <tr><td>عاصفة رملية شديدة تضرب المدينة</td><td><code class="fs-5 text-warning">CWJXUOC</code></td></tr>
-                                        <tr><td>طقس غائم كلياً ومظلم</td><td><code class="fs-5 text-warning">ALNSFMZO</code></td></tr>
-                                        <tr><td>تسريع ساعة اللعبة ومرور الوقت بسرعة</td><td><code class="fs-5 text-warning">YSOHNUL</code></td></tr>
-                                        <tr><td>حركة بطيئة جداً لكل شيء في اللعبة (Slow Motion)</td><td><code class="fs-5 text-warning">SLOWITDOWN</code></td></tr>
-                                        <tr><td>حركة سريعة جداً لكل شيء في اللعبة (Fast Motion)</td><td><code class="fs-5 text-warning">SPEEDITUP</code></td></tr>
-                                        <tr><td>تثبيت وقت اللعبة دائماً عند منتصف الليل</td><td><code class="fs-5 text-warning">NIGHTPROWLER</code></td></tr>
-                                        <tr><td>تثبيت الوقت عند الساعة 21:00 مع سماء برتقالية</td><td><code class="fs-5 text-warning">OFVIAC</code></td></tr>
-                                        <tr><td>الناس في الشارع يحملون أسلحة نارية</td><td><code class="fs-5 text-warning">FOOOXFT</code></td></tr>
-                                        <tr><td>الناس والمارة يهاجمونك بالأسلحة والضرب</td><td><code class="fs-5 text-warning">BGLUAWML</code></td></tr>
-                                        <tr><td>حرب شوارع وفوضى عارمة بين جميع المارة</td><td><code class="fs-5 text-warning">AJLOJYQY</code></td></tr>
-                                        <tr><td>العصابات تسيطر تماماً على كل أحياء وشوارع اللعبة</td><td><code class="fs-5 text-warning">BIFBUZZ</code></td></tr>
-                                        <tr><td>شوارع اللعبة تمتلئ بأعضاء العصابات فقط</td><td><code class="fs-5 text-warning">ONLYHOMIESALLOWED</code></td></tr>
-                                        <tr><td>تجنيد أي شخص في الشارع لعصابتك ومعه مسدس</td><td><code class="fs-5 text-warning">SJMAHPE</code></td></tr>
-                                        <tr><td>تجنيد أي شخص في الشارع لعصابتك ومعه قاذف صواريخ</td><td><code class="fs-5 text-warning">ZSOXFSQ</code></td></tr>
-                                        <tr><td>المدينة تقلب بالكامل لطابع نينجا (سيارات سوداء وسيوف)</td><td><code class="fs-5 text-warning">NINJATOWN</code></td></tr>
-                                        <tr><td>نمط السيرك والمهرجين في السيارات والشوارع</td><td><code class="fs-5 text-warning">CRAZYTOWN</code></td></tr>
-                                        <tr><td>نمط الريف والقرى والسيارات الزراعية القديمة</td><td><code class="fs-5 text-warning">FVTMNBZ</code></td></tr>
-
+                                        <tr><td>صحة كاملة + درع + 250,000$ + تصليح السيارة</td><td><code class="fs-6 text-warning fw-bold">HESOYAM</code></td></tr>
+                                        <tr><td>عدم الموت / صحة لا تنتهي (لا تؤثر بالرصاص)</td><td><code class="fs-6 text-warning fw-bold">BAGUVIX</code></td></tr>
+                                        <tr><td>أكسجين ولا نهاية للتنفس تحت الماء</td><td><code class="fs-6 text-warning fw-bold">CVWKXAM</code></td></tr>
+                                        <tr><td>عدم الجوع أبداً</td><td><code class="fs-6 text-warning fw-bold">AEDUWNV</code></td></tr>
+                                        <tr><td>حزمة أسلحة 1 (أسلحة مشاة خفيفة)</td><td><code class="fs-6 text-warning fw-bold">LXGIWYL</code></td></tr>
+                                        <tr><td>حزمة أسلحة 2 (أسلحة احترافية ثقيلة)</td><td><code class="fs-6 text-warning fw-bold">PROFESSIONALSKIT</code></td></tr>
+                                        <tr><td>حزمة أسلحة 3 (أسلحة العصابات والرشاشات)</td><td><code class="fs-6 text-warning fw-bold">UZUMYMW</code></td></tr>
+                                        <tr><td>ذخيرة لا تنتهي بدون إعادة تعبئة (Infinite Ammo)</td><td><code class="fs-6 text-warning fw-bold">FULLCLIP</code></td></tr>
+                                        <tr><td>مستوى القنص والأسلحة لفل ماكس (Hitman)</td><td><code class="fs-6 text-warning fw-bold">PROFESSIONALKILLER</code></td></tr>
+                                        <tr><td>عضلات وجسم قوي جداً (Max Muscle)</td><td><code class="fs-6 text-warning fw-bold">JYSDSOD</code></td></tr>
+                                        <tr><td>جسم نحيف فوراً (Max Skinny)</td><td><code class="fs-6 text-warning fw-bold">KVGYZQK</code></td></tr>
+                                        <tr><td>جسم سمين جداً (Max Fat)</td><td><code class="fs-6 text-warning fw-bold">BTCDBCB</code></td></tr>
+                                        <tr><td>احترام العصابات ماكس (Max Respect)</td><td><code class="fs-6 text-warning fw-bold">OGXSDAG</code></td></tr>
+                                        <tr><td>جاذبية للنساء ماكس (Max Sex Appeal)</td><td><code class="fs-6 text-warning fw-bold">EHIBXQS</code></td></tr>
+                                        <tr><td>قفزة عالية جداً (Mega Jump)</td><td><code class="fs-6 text-warning fw-bold">KANGAROO</code></td></tr>
+                                        <tr><td>لكمة الخارقة (Mega Punch)</td><td><code class="fs-6 text-warning fw-bold">IAVENJQ</code></td></tr>
+                                        <tr><td>طاقة وتحمل لا ينتهي للجري والسباحة</td><td><code class="fs-6 text-warning fw-bold">VKYPQCF</code></td></tr>
+                                        <tr><td>مهارة قيادة السيارات والتحكم لفل ماكس</td><td><code class="fs-6 text-warning fw-bold">VQIMAHA</code></td></tr>
+                                        <tr><td>مهارة قيادة الدراجات النارية والهوائية ماكس</td><td><code class="fs-6 text-warning fw-bold">NATURALSPEED</code></td></tr>
+                                        <tr><td>مهارة الطيران وقيادة الطائرات لفل ماكس</td><td><code class="fs-6 text-warning fw-bold">FLYINGTOSTUNT</code></td></tr>
+                                        <tr><td>السيارات تطير في الهواء عند زيادة السرعة</td><td><code class="fs-6 text-warning fw-bold">CHITTYCHITTYBANGBANG</code></td></tr>
+                                        <tr><td>القيادة فوق الماء لجميع أنواع السيارات</td><td><code class="fs-6 text-warning fw-bold">GKPNMQ</code></td></tr>
+                                        <tr><td>تفجير جميع السيارات المحيطة باللاعب فوراً</td><td><code class="fs-6 text-warning fw-bold">CPKTNWT</code></td></tr>
+                                        <tr><td>حركة بطيئة جداً لكل شيء (Slow Motion)</td><td><code class="fs-6 text-warning fw-bold">SLOWITDOWN</code></td></tr>
+                                        <tr><td>حركة سريعة جداً لكل شيء (Fast Motion)</td><td><code class="fs-6 text-warning fw-bold">SPEEDITUP</code></td></tr>
+                                        <tr><td>المدينة تقلب بالكامل لطابع نينجا (سيوف وسيارة سوداء)</td><td><code class="fs-6 text-warning fw-bold">NINJATOWN</code></td></tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                     </div>
+
                     <!-- 2. الشرطة والمستويات -->
-                    <div class="col-md-6">
-                        <div class="card bg-dark text-white p-3 shadow h-100 border border-danger">
-                            <h4 class="text-danger fw-bold mb-3"><i class="fa-solid fa-handcuffs me-2"></i> الشرطة والنجوم</h4>
-                            <table class="table table-dark table-hover align-middle mb-0">
-                                <thead>
-                                    <tr class="table-secondary text-dark">
-                                        <th>الوصف / التأثير</th>
-                                        <th>الشفرة</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td>إلغاء الشرطة ومنع الملاحقة تماماً</td><td><code class="fs-6 text-warning">AEZAKMI</code></td></tr>
-                                    <tr><td>تصفير نجوم الشرطة فوراً</td><td><code class="fs-6 text-warning">TURNDOWNTHEHEAT</code></td></tr>
-                                    <tr><td>زيادة نجمتين في الشرطة</td><td><code class="fs-6 text-warning">TURNUPTHEHEAT</code></td></tr>
-                                    <tr><td>6 نجوم مطاردة فورية (أعلى مستوى)</td><td><code class="fs-6 text-warning">BRINGITON</code></td></tr>
-                                    <tr><td>عدم الموت نهائياً من رصاص الشرطة والضرب (BAGUVIX)</td><td><code class="fs-6 text-warning">BAGUVIX</code></td></tr>
-                                    <tr><td>المارة والشرطة يهاجمونك بالأسلحة فوراً</td><td><code class="fs-6 text-warning">BGLUAWML</code></td></tr>
-                                    <tr><td>الناس في الشوارع يحملون أسلحة نارية للدفاع أو الهجوم</td><td><code class="fs-6 text-warning">FOOOXFT</code></td></tr>
-                                    <tr><td>حرب شوارع وفوضى عارمة بين المارة والشرطة</td><td><code class="fs-6 text-warning">AJLOJYQY</code></td></tr>
-                                    <tr><td>تثبيت مستوى النجوم الحالي ومنعه من الارتفاع نهائياً</td><td><code class="fs-6 text-warning">AEZAKMI</code></td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    <!-- 3. استدعاء المركبات والطائرات -->
-                    <div class="col-md-6">
-                        <div class="card bg-dark text-white p-3 shadow h-100 border border-warning">
-                            <h4 class="text-warning fw-bold mb-3"><i class="fa-solid fa-car me-2"></i> إظهار السيارات والطائرات</h4>
-                            <table class="table table-dark table-hover align-middle mb-0">
-                                <thead>
-                                    <tr class="table-secondary text-dark">
-                                        <th>المركبة</th>
-                                        <th>الشفرة</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td>حقيبة الطيران (Jetpack)</td><td><code class="fs-6 text-warning">ROCKETMAN</code></td></tr>
-                                    <tr><td>طائرة حرب حربية (Hydra Jet)</td><td><code class="fs-6 text-warning">JUMPJET</code></td></tr>
-                                    <tr><td>دبابة عسكرية ضخمة (Rhino Tank)</td><td><code class="fs-6 text-warning">AIWPRTON</code></td></tr>
-                                    <tr><td>هليكوبتر هجومية (Hunter Helicopter)</td><td><code class="fs-6 text-warning">OHDUDE</code></td></tr>
-                                    <tr><td>سيارة سباق سبورت 1 (Hotring Racer)</td><td><code class="fs-6 text-warning">PDNEJOH</code></td></tr>
-                                    <tr><td>سيارة سباق سبورت 2 (Hotring Racer 2)</td><td><code class="fs-6 text-warning">VPJTQWV</code></td></tr>
-                                    <tr><td>سيارة وحشية عجلات ضخمة (Monster Truck)</td><td><code class="fs-6 text-warning">MONSTERMASH</code></td></tr>
-                                    <tr><td>سيارة الموتى والتابوت (Romero)</td><td><code class="fs-6 text-warning">WHERESTHEFUNERAL</code></td></tr>
-                                    <tr><td>سيارة ليموزين طويلة (Stretch Limousine)</td><td><code class="fs-6 text-warning">CELEBRITYSTATUS</code></td></tr>
-                                    <tr><td>مظلة باراشوت للطيران (Parachute)</td><td><code class="fs-6 text-warning">AIYPWZQP</code></td></tr>
-                                    <tr><td>سيارة الغولف الصغيرة (Caddy)</td><td><code class="fs-6 text-warning">RZHSUEW</code></td></tr>
-                                    <tr><td>شاحنة القمامة (Trashmaster)</td><td><code class="fs-6 text-warning">TRUEGRIT</code></td></tr>
-                                    <tr><td>جرافة الطين والرمال الثقيلة (Dozer)</td><td><code class="fs-6 text-warning">ITSALLBULL</code></td></tr>
-                                    <tr><td>سيارة رالي المزرعة الكبيرة (Rancher)</td><td><code class="fs-6 text-warning">JQNTDMH</code></td></tr>
-                                    <tr><td>شاحنة الصهريج والوقود الضخمة (Tanker Truck)</td><td><code class="fs-6 text-warning">AMOMHRER</code></td></tr>
-                                    <tr><td>مركبة حوامة برية ومائية برمائية (Vortex Hovercraft)</td><td><code class="fs-6 text-warning">KGGGDKP</code></td></tr>
-                                    <tr><td>دراجة نارية صحراوية بأربع عجلات (Quad Bike)</td><td><code class="fs-6 text-warning">AKJJYGLC</code></td></tr>
-                                    <tr><td>طائرة الاستعراضات الهوائية الصغيرة (Stunt Plane)</td><td><code class="fs-6 text-warning">FLYINGTOSTUNT</code></td></tr>
-                                    <tr><td>سيارة قديمة كلاسيكية (Bloodring Banger)</td><td><code class="fs-6 text-warning">OLDSPEEDDEMON</code></td></tr>
-                                    <tr><td>السيارات تطير في الهواء عند السرعة العالية</td><td><code class="fs-6 text-warning">CHITTYCHITTYBANGBANG</code></td></tr>
-                                    <tr><td>القيادة فوق الماء لجميع أنواع السيارات</td><td><code class="fs-6 text-warning">GKPNMQ</code></td></tr>
-                                    <tr><td>إضافة نيترو وسرعة فائقة لجميع السيارات</td><td><code class="fs-6 text-warning">SPEEDFREAK</code></td></tr>
-                                    <tr><td>التحكم والالتفاف المثالي للمركبات في المنعطفات</td><td><code class="fs-6 text-warning">STICKLIKEGLUE</code></td></tr>
-                                    <tr><td>السيارات تطير بعيداً جداً في السماء عند الاصطدام بها</td><td><code class="fs-6 text-warning">BUBBLECARS</code></td></tr>
-                                    <tr><td>القوارب واليخوت تطير في الهواء وفوق الماء</td><td><code class="fs-6 text-warning">FLYINGFISH</code></td></tr>
-                                    <tr><td>تفجير جميع السيارات المحيطة باللاعب فوراً</td><td><code class="fs-6 text-warning">CPKTNWT</code></td></tr>
-
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- ================= ⛏️ قسم MINECRAFT COMMANDS ================= -->
-            <div class="tab-pane fade" id="mc" role="tabpanel">
-                <div class="card bg-dark text-white p-4 shadow border border-warning">
-                    <h3 class="text-warning fw-bold mb-3"><i class="fa-solid fa-terminal me-2"></i> أهم أوامر التحكم والبناء في Minecraft</h3>
-                    <div class="table-responsive">
-                        <table class="table table-dark table-hover align-middle mb-0">
-                            <thead>
-                                <tr class="table-warning text-dark">
-                                    <th>الوظيفة والشرح</th>
-                                    <th>الأمر الكود (Command)</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr><td>التحويل إلى نمط الإبداع والطيران (Creative)</td><td><code class="fs-6 text-info">/gamemode creative</code></td></tr>
-                                <tr><td>التحويل إلى نمط البقاء والنجاة (Survival)</td><td><code class="fs-6 text-info">/gamemode survival</code></td></tr>
-                                <tr><td>التحويل إلى نمط المشاهدة والتنقل عبر البلوكات (Spectator)</td><td><code class="fs-6 text-info">/gamemode spectator</code></td></tr>
-                                <tr><td>عدم ضياع الأغراض والموارد عند الموت (Keep Inventory)</td><td><code class="fs-6 text-info">/gamerule keepInventory true</code></td></tr>
-                                <tr><td>إيقاف وتثبيت حركة الشمس والوقت</td><td><code class="fs-6 text-info">/gamerule doDaylightCycle false</code></td></tr>
-                                <tr><td>إيقاف رسبنة ورسبون الوحوش والأشرار</td><td><code class="fs-6 text-info">/gamerule doMobSpawning false</code></td></tr>
-                                <tr><td>منع الكريبر من تدمير البلوكات عند الانفجار</td><td><code class="fs-6 text-info">/gamerule mobGriefing false</code></td></tr>
-                                <tr><td>تغيير الوقت إلى النهار فوراً</td><td><code class="fs-6 text-info">/time set day</code></td></tr>
-                                <tr><td>تغيير الوقت إلى الليل</td><td><code class="fs-6 text-info">/time set night</code></td></tr>
-                                <tr><td>جعل الطقس مشمس بدون أمطار</td><td><code class="fs-6 text-info">/weather clear</code></td></tr>
-                                <tr><td>إعطاء اللاعب 64 ستك دايموند فوراً</td><td><code class="fs-6 text-info">/give @p diamond 64</code></td></tr>
-                                <tr><td>الحصول على بلوكة الأوامر السحرية (Command Block)</td><td><code class="fs-6 text-info">/give @p command_block</code></td></tr>
-                                <tr><td>إعطاء اللاعب 64 بلوكة نيثرايت (Netherite)</td><td><code class="fs-6 text-info">/give @p netherite_block 64</code></td></tr>
-                                <tr><td>إعطاء سرعة خارقة للاعب لمدة طويلة</td><td><code class="fs-6 text-info">/effect give @p speed 9999 10</code></td></tr>
-                                <tr><td>تأثير الرؤية الليلية في الظلام والكهوف (Night Vision)</td><td><code class="fs-6 text-info">/effect give @p night_vision 9999 255</code></td></tr>
-                                <tr><td>تأثير قوة ضرب خارقة (Strength)</td><td><code class="fs-6 text-info">/effect give @p strength 9999 255</code></td></tr>
-                                <tr><td>إعطاء 100 لفل خبرة XP للاعب</td><td><code class="fs-6 text-info">/xp add @p 100 levels</code></td></tr>
-                                <tr><td>التعرف على مكان أقرب قرية (Village)</td><td><code class="fs-6 text-info">/locate structure village</code></td></tr>
-                                <tr><td>التعرف على مكان بوابات الإندر (Stronghold)</td><td><code class="fs-6 text-info">/locate structure stronghold</code></td></tr>
-                                <tr><td>القضاء على جميع الموبز والوحوش المحيطة</td><td><code class="fs-6 text-info">/kill @e[type=!player]</code></td></tr>
-                                <tr><td>التحويل إلى نمط المغامرة (Adventure Mode)</td><td><code class="fs-6 text-info">/gamemode adventure</code></td></tr>
-                                <tr><td>الحصول على أكسجين ولا نهاية للتنفس تحت الماء (Water Breathing)</td><td><code class="fs-6 text-info">/effect give @p water_breathing 9999 255</code></td></tr>
-                                <tr><td>الحصول على حماية كاملة ضد النيران والحمم (Fire Resistance)</td><td><code class="fs-6 text-info">/effect give @p fire_resistance 9999 255</code></td></tr>
-                                <tr><td>القفز عالياً جداً لتجاوز المرتفعات (Jump Boost)</td><td><code class="fs-6 text-info">/effect give @p jump_boost 9999 5</code></td></tr>
-                                <tr><td>تأثير الاختفاء الكامل عن أعين الوحوش واللاعبين (Invisibility)</td><td><code class="fs-6 text-info">/effect give @p invisibility 9999 255</code></td></tr>
-                                <tr><td>إزالة وتطهير جميع التأثيرات والسموم عن اللاعب فوراً</td><td><code class="fs-6 text-info">/effect clear @p</code></td></tr>
-                                <tr><td>إيقاف وتثبيت الطقس الحالي ومنع تعاقب الأمطار والعواصف</td><td><code class="fs-6 text-info">/gamerule doWeatherCycle false</code></td></tr>
-                                <tr><td>إلغاء وتجميد الضرر الناتج عن السقوط من الأماكن المرتفعة</td><td><code class="fs-6 text-info">/gamerule fallDamage false</code></td></tr>
-                                <tr><td>التعرف على إحداثيات مكان أقرب قصر مهجور (Woodland Mansion)</td><td><code class="fs-6 text-info">/locate structure mansion</code></td></tr>
-                                <tr><td>التعرف على إحداثيات أقرب مدينة في عالم الإند (End City)</td><td><code class="fs-6 text-info">/locate structure end_city</code></td></tr>
-                                <tr><td>الحصول على جناح الإليترا (Elytra) للطيران في وضع النجاة</td><td><code class="fs-6 text-info">/give @p elytra</code></td></tr>
-                                <tr><td>الحصول على بلوكة الحاجز السحرية غير المرئية (Barrier Block)</td><td><code class="fs-6 text-info">/give @p barrier</code></td></tr>
-                                <tr><td>استدعاء تنين الإندر (Ender Dragon) فوراً في موقعك الحالي</td><td><code class="fs-6 text-info">/summon ender_dragon</code></td></tr>
-                                <tr><td>استدعاء البرق والصواعق الرعدية لتضرب أمامك فوراً</td><td><code class="fs-6 text-info">/summon lightning_bolt</code></td></tr>
-
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <br>
-                <!-- لعبة 3: Minecraft -->
-        <div class="req-card p-4 mb-4">
-            <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap">
-                <h3 class="fw-bold text-warning mb-0"><i class="bi bi-box-seam"></i> Minecraft</h3>
-                <span class="badge badge-low fs-6 mt-2 mt-md-0">تناسب جميع الأجهزة (Low-End)</span>
-            </div>
-            <div class="table-responsive">
-                <table class="table table-bordered table-dark table-hover mb-0 align-middle">
-                    <thead>
-                        <tr class="table-secondary text-dark text-center">
-                            <th>المكون (Component)</th>
-                            <th>الحد الأدنى (Minimum)</th>
-                            <th>الموصى به (Recommended)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="fw-bold text-neon"><i class="bi bi-cpu"></i> المعالج (CPU)</td>
-                            <td>Intel Core i3-3210</td>
-                            <td>Intel Core i5-4690</td>
-                        </tr>
-                        <tr>
-                            <td class="fw-bold text-neon"><i class="bi bi-memory"></i> الرامات (RAM)</td>
-                            <td>4 GB</td>
-                            <td>8 GB</td>
-                        </tr>
-                        <tr>
-                            <td class="fw-bold text-neon"><i class="bi bi-gpu-card"></i> كارت الشاشة (GPU)</td>
-                            <td>Intel HD Graphics 4000</td>
-                            <td>NVIDIA GeForce 700 Series</td>
-                        </tr>
-                        <tr>
-                            <td class="fw-bold text-neon"><i class="bi bi-hdd-fill"></i> المساحة المطلوبة</td>
-                            <td colspan="2" class="text-center">4 GB (مع مساحة إضافية لللعوالم والـ Mods)</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-            </div>
-
-            <!-- ================= 🏎️ قسم NEED FOR SPEED SERIES ================= -->
-            <div class="tab-pane fade" id="nfs" role="tabpanel">
-                <div class="row g-4">
-                    
-                    <!-- Need for Speed Most Wanted -->
-                    <div class="col-md-6">
-                        <div class="card bg-dark text-white p-4 shadow h-100 border border-danger">
-                            <h4 class="text-danger fw-bold mb-3"><i class="fa-solid fa-fire me-2"></i> Need for Speed: Most Wanted</h4>
-                            <p class="small text-light opacity-75">اكتب الكود في شاشة Press Start قبل دخول القائمة الرئيسية:</p>
-                            <table class="table table-dark align-middle mb-0">
-                                <thead>
-                                    <tr class="table-secondary text-dark">
-                                        <th>الوصف</th>
-                                        <th>الكود</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td>فتح التحدي الخاص والسيارة السريعة Burger King</td><td><code class="text-warning">burgerking</code></td></tr>
-                                    <tr><td>فتح سيارة Castrol Syntec Ford GT الاحترافية</td><td><code class="text-warning">castrol</code></td></tr>
-                                    <tr><td>فتح سيارة Pontiac GTO الرياضية</td><td><code class="text-warning">givemethegTO</code></td></tr>
-                                    <tr><td>فتح جميع سيارات الـ Blacklist في الجراج</td><td><code class="text-warning">iammostwanted</code></td></tr>
-                                    <tr><td>الحصول على مكافأة مالية إضافية بقيمة $10,000 في نمط المهنة (Career)</td><td><code class="text-warning">gimmevisual1</code></td></tr>
-                                    <tr><td>الحصول على زيادة في الميزانية بمقدار $10,000 إضافية عند بدء الجيم الجديد</td><td><code class="text-warning">needperformance1</code></td></tr>
-                                    <tr><td>فتح التعديلات والقطع الخاصة بـ Performance Level 1 تلقائياً</td><td><code class="text-warning">needperformance2</code></td></tr>
-                                    <tr><td>فتح التعديلات والأشكال الخاصة بـ Visual Level 1 تلقائياً</td><td><code class="text-warning">gimmevisual2</code></td></tr>
-                                    <tr><td>الحصول على $10,000 دولار إضافية تلقائياً (عند وجود ملف حفظ للعبة NFS Underground 2 على جهازك)</td><td><code class="text-warning">[تلقائي] Underground 2 Save</code></td></tr>
-                                    <tr><td>الحصول على سيارة الراعي الرسمية الجاهزة (Porsche Cayman S) في طور السباق السريع</td><td><code class="text-warning">[إنجاز] فتح تحدي الـ Challenge Series</code></td></tr>
-                                    <tr><td>فتح قطع تعديل المحرك والأداء الأقوى على الإطلاق (Junkman Parts) بالكامل</td><td><code class="text-warning">[إنجاز] إنهاء تحديات الـ Burger King بنجاح</code></td></tr>
-                                    <tr><td>الحصول على سيارات أعضاء الـ Blacklist مجاناً (مثل سيارة Razor أو Ming) بالجراج الخاص بك</td><td><code class="text-warning">[مكافأة] اختيار بطاقة الـ Pink Slip بعد هزيمتهم</code></td></tr>
-                                    <tr><td>الحصول على أموال إضافية وتصليح مجاني للسيارات أثناء المطاردات</td><td><code class="fs-6 text-warning">[إنجاز] تحطيم لوحات الإعلانات وحواجز الشرطة في المدينة</code></td></tr>
-                                </tbody>
-                            </table>
-                            <div class="alert alert-secondary text-white bg-secondary bg-opacity-25 border-secondary mt-3 mb-0">
-                                💡 <strong>خدعة السرعة:</strong> عند الدخول في الملفات الضيقة، فعل ميزة الـ Speedbreaker مع ضغط النيترو معاً لتجاوز أي سيارة شرطة بدقة فتاكة.
+                    <div class="col-12 col-md-6">
+                        <div class="card bg-dark text-white p-3 shadow h-100 border border-danger rounded">
+                            <h4 class="text-danger fw-bold mb-3 fs-5"><i class="fa-solid fa-handcuffs me-2"></i> الشرطة والنجوم</h4>
+                            <div class="table-responsive">
+                                <table class="table table-dark table-hover align-middle mb-0">
+                                    <thead>
+                                        <tr class="table-secondary text-dark">
+                                            <th>الوصف / التأثير</th>
+                                            <th>الشفرة</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>إلغاء الشرطة ومنع الملاحقة تماماً</td><td><code class="fs-6 text-warning fw-bold">AEZAKMI</code></td></tr>
+                                        <tr><td>تصفير نجوم الشرطة فوراً</td><td><code class="fs-6 text-warning fw-bold">TURNDOWNTHEHEAT</code></td></tr>
+                                        <tr><td>زيادة نجمتين في الشرطة</td><td><code class="fs-6 text-warning fw-bold">TURNUPTHEHEAT</code></td></tr>
+                                        <tr><td>6 نجوم مطاردة فورية (أعلى مستوى)</td><td><code class="fs-6 text-warning fw-bold">BRINGITON</code></td></tr>
+                                        <tr><td>حرب شوارع وفوضى عارمة بين المارة والشرطة</td><td><code class="fs-6 text-warning fw-bold">AJLOJYQY</code></td></tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Need for Speed Underground 2 -->
-                    <div class="col-md-6">
-                        <div class="card bg-dark text-white p-4 shadow h-100 border border-info">
-                            <h4 class="text-info fw-bold mb-3"><i class="fa-solid fa-bolt me-2"></i> Need for Speed: Underground 2</h4>
-                            <p class="small text-light opacity-75">اكتب الكود من الكيبورد في شاشة البداية (Press Enter):</p>
-                            <table class="table table-dark align-middle mb-0">
-                                <thead>
-                                    <tr class="table-secondary text-dark">
-                                        <th>الوصف</th>
-                                        <th>الكود</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td>فتح جميع تعديلات وشكل Visual Level 1</td><td><code class="text-warning">gimmevisual1</code></td></tr>
-                                    <tr><td>فتح جميع تعديلات وشكل Visual Level 2</td><td><code class="text-warning">gimmevisual2</code></td></tr>
-                                    <tr><td>فتح جميع قطع تعديل الموتور والسرعة Level 1</td><td><code class="text-warning">needperformance1</code></td></tr>
-                                    <tr><td>فتح جميع قطع تعديل الموتور والسرعة Level 2</td><td><code class="text-warning">needperformance2</code></td></tr>
-                                    <tr><td>الحصول على $1,000 دولار إضافية في Career Mode</td><td><code class="text-warning">regmyles</code></td></tr>
-                                    <tr><td>الحصول على $200 دولار إضافية في بداية الجيم</td><td><code class="text-warning">1000dollars</code></td></tr>
-                                    <tr><td>الحصول على $20,000 دولار كاش للبدء بها في الـ Career Mode</td><td><code class="text-warning">regmebaby</code></td></tr>
-                                    <tr><td>الحصول على $200 دولار كاش إضافية للـ Career Mode</td><td><code class="text-warning">regmybank</code></td></tr>
-                                    <tr><td>فتح جميع المناطق والأحياء المغلقة في الخريطة فوراً</td><td><code class="text-warning">opendoors</code></td></tr>
-                                    <tr><td>فتح وفتح جميع السيارات المقفلة باللعبة في طور السباق السريع</td><td><code class="text-warning">ordermybaby</code></td></tr>
-                                    <tr><td>فتح سيارة الليموزين والراعي الرسمي (Lincoln Navigator "Chingy")</td><td><code class="text-warning">gimmechingy</code></td></tr>
-                                    <tr><td>فتح سيارة راعي هامر المخصصة (Hummer H2 "Capone")</td><td><code class="text-warning">wannacapone</code></td></tr>
-                                    <tr><td>فتح سيارة راعي كاديلاك المعدلة (Cadillac Escalade "Snoop Dogg")</td><td><code class="text-warning">yodogg</code></td></tr>
-                                    <tr><td>فتح سيارة السباق الخاصة برعاية بونتياك (Pontiac GTO "The Doors")</td><td><code class="text-warning">opendoors</code></td></tr>
-                                    <tr><td>فتح سيارة تويوتا كورولا المعدلة برعاية الفنان (David Choe)</td><td><code class="text-warning">davidchoeart</code></td></tr>
-                                    <tr><td>فتح ملصقات وستايل شكل راعي (Best Buy Vinyl) للسيارات</td><td><code class="text-warning">needmybestbuy</code></td></tr>
-                                    <tr><td>فتح ملصقات وستايل شكل راعي (Burger King Vinyl) للسيارات</td><td><code class="text-warning">gottahavebk</code></td></tr>
-                                    <tr><td>فتح ملصقات وستايل شكل راعي (Old Spice Vinyl) للسيارات</td><td><code class="text-warning">goforoldspice</code></td></tr>
-                                    <tr><td>فتح ملصقات وستايل شكل راعي الاتصالات (Cingular Vinyl)</td><td><code class="text-warning">gotmycingular</code></td></tr>
-                                    <tr><td>فتح ملصقات وستايل شكل راعي (Edge Vinyl) للسيارات</td><td><code class="text-warning">gottaedge</code></td></tr>
-                                </tbody>
-                            </table>
+                    <!-- 3. استدعاء المركبات والطائرات -->
+                    <div class="col-12 col-md-6">
+                        <div class="card bg-dark text-white p-3 shadow h-100 border border-warning rounded">
+                            <h4 class="text-warning fw-bold mb-3 fs-5"><i class="fa-solid fa-car me-2"></i> إظهار السيارات والطائرات</h4>
+                            <div class="table-responsive">
+                                <table class="table table-dark table-hover align-middle mb-0">
+                                    <thead>
+                                        <tr class="table-secondary text-dark">
+                                            <th>المركبة</th>
+                                            <th>الشفرة</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>حقيبة الطيران (Jetpack)</td><td><code class="fs-6 text-warning fw-bold">ROCKETMAN</code></td></tr>
+                                        <tr><td>طائرة حرب حربية (Hydra Jet)</td><td><code class="fs-6 text-warning fw-bold">JUMPJET</code></td></tr>
+                                        <tr><td>دبابة عسكرية ضخمة (Rhino Tank)</td><td><code class="fs-6 text-warning fw-bold">AIWPRTON</code></td></tr>
+                                        <tr><td>هليكوبتر هجومية (Hunter)</td><td><code class="fs-6 text-warning fw-bold">OHDUDE</code></td></tr>
+                                        <tr><td>سيارة سباق سبورت (Hotring Racer)</td><td><code class="fs-6 text-warning fw-bold">PDNEJOH</code></td></tr>
+                                        <tr><td>سيارة وحشية عجلات ضخمة (Monster)</td><td><code class="fs-6 text-warning fw-bold">MONSTERMASH</code></td></tr>
+                                        <tr><td>سيارة ليموزين طويلة (Stretch)</td><td><code class="fs-6 text-warning fw-bold">CELEBRITYSTATUS</code></td></tr>
+                                        <tr><td>مظلة باراشوت للطيران (Parachute)</td><td><code class="fs-6 text-warning fw-bold">AIYPWZQP</code></td></tr>
+                                        <tr><td>التحكم والاستجابة المثالية للسيارات</td><td><code class="fs-6 text-warning fw-bold">STICKLIKEGLUE</code></td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
 
                 </div>
             </div>
 
+            <!-- ================= ⛏️ قسم MINECRAFT ================= -->
+            <div class="tab-pane fade" id="mc" role="tabpanel">
+                <div class="card bg-dark text-white p-3 shadow border border-success rounded">
+                    <h3 class="text-success fw-bold mb-3 fs-4"><i class="fa-solid fa-terminal me-2"></i> أهم أوامر Minecraft (Console Commands)</h3>
+                    <div class="table-responsive">
+                        <table class="table table-dark table-hover align-middle mb-0">
+                            <thead>
+                                <tr class="table-secondary text-dark">
+                                    <th>الوصف</th>
+                                    <th>الأمر (Command)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>تفعيل الطيران والبناء غير المحدود (Creative Mode)</td><td><code class="fs-6 text-warning fw-bold">/gamemode creative</code></td></tr>
+                                <tr><td>العودة لوضع النجاة العادي (Survival Mode)</td><td><code class="fs-6 text-warning fw-bold">/gamemode survival</code></td></tr>
+                                <tr><td>الحفاظ على أغراضك بعد الموت بدون ما تضيع</td><td><code class="fs-6 text-warning fw-bold">/gamerule keepInventory true</code></td></tr>
+                                <tr><td>تغيير الوقت إلى النهار فوراً</td><td><code class="fs-6 text-warning fw-bold">/time set day</code></td></tr>
+                                <tr><td>إيقاف المطر وتصفية الجو</td><td><code class="fs-6 text-warning fw-bold">/weather clear</code></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= 🏎️ قسم NEED FOR SPEED ================= -->
+            <div class="tab-pane fade" id="nfs" role="tabpanel">
+                <div class="card bg-dark text-white p-3 shadow border border-danger rounded">
+                    <h3 class="text-danger fw-bold mb-3 fs-4"><i class="fa-solid fa-gauge-high me-2"></i> أسرار وشفرات Need For Speed Most Wanted</h3>
+                    <div class="table-responsive">
+                        <table class="table table-dark table-hover align-middle mb-0">
+                            <thead>
+                                <tr class="table-secondary text-dark">
+                                    <th>التأثير / الفائدة</th>
+                                    <th>الكود (يكتب في الشاشة الرئيسية)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>فتح سيارة Castrol Syntec Ford GT الحصرية</td><td><code class="fs-6 text-warning fw-bold">castrol</code></td></tr>
+                                <tr><td>فتح تحدي Hamburger Challenge السرّي</td><td><code class="fs-6 text-warning fw-bold">burgerking</code></td></tr>
+                                <tr><td>الحصول على بونص فلوس $10,000 عند بداية اللعبة</td><td>يمتلك سيفت على الجهاز لـ NFS Underground 2</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </div>
+    </main>
 
-    <!-- Footer -->
+    <!-- الفوتر -->
     <footer class="text-center text-light opacity-75 py-4 border-top border-secondary mt-5">
-        <p class="mb-0 fs-5 fw-bold text-info">Created by Antony | By  Little Programmer 2026-2027</p>
+        <p class="mb-0 fs-6 fs-md-5 fw-bold text-info">Created by Antony | By Little Programmer 2026-2027</p>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
