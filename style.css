@@ -33,28 +33,38 @@ h1{
   border-bottom: 2px solid #00d2ff;
   padding: 10px 0;
 }
-.ticker-move {
-  display: flex;
+/* الحاوية الخارجية لمنع ظهور شريط التمرير في المتصفح */
+.ticker-wrap {
+  overflow: hidden;
   width: 100%;
-  animation: ticker 25s linear infinite;
+  box-sizing: border-box;
 }
+
+.ticker-move {
+ display: flex;
+ width: max-content;
+ gap: 1.5rem;
+ animation: move 35s linear infinite;
+}
+
 .ticker-item {
   white-space: nowrap;
-  padding: 0 2rem;
-background: linear-gradient(135deg, #FFE07D 0%, #F5AF19 45%, #E65C00 70%, #FFF099 100%);
-border-radius: 100px;
+  padding: 2px 12px;
+  background: linear-gradient(135deg, #FFE07D 0%, #F5AF19 45%, #E65C00 70%, #FFF099 100%);
+  border-radius: 100px;
   font-weight: bold;
+  flex-shrink: 0;
 }
-@keyframes ticker {
-  0% { 
 
-    transform: translateX(-100%); 
+@keyframes move {
+  0% {
+    transform: translateX(100%);
 }
   100% {
+    transform: translateX(-100%);
+}
+}
 
-    transform: translateX(250%); 
-}
-}
 h4{
     color: green;
 }
