@@ -323,8 +323,12 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.text-success-neon { color: #10b981; }
-.text-danger-neon { color: #f43f5e; }
+.text-success-neon {
+     color: #10b981; 
+}
+.text-danger-neon {
+     color: #f43f5e; 
+    }
  body {
             background-color: #0b0e1a;
             color: #ffffff;
@@ -410,4 +414,18 @@ body {
             border-color: #00f2fe;
             box-shadow: 0 0 10px rgba(0, 242, 254, 0.4);
         }
-        
+        video{
+        height: 300px;
+        object-fit: cover;
+        background-color: #000; 
+        height: 300;
+        width: 100%;
+        }
+        @media (max-width: 768px) {
+        video{
+        height: 300px;
+        background-color: #000; 
+        height: 300;
+        width: 325px;
+        }
+        }
