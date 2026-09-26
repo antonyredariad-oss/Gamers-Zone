@@ -500,6 +500,10 @@ body {
   font-weight: bold;
   letter-spacing: 2px;
 }
+.img1{
+    height: 400px;
+    width: 100%;
+}
         @media (max-width: 768px) {
         video{
         height: 300px;
