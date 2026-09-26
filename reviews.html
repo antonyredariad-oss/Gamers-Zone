@@ -85,6 +85,24 @@
     </style>
 </head>
 <body>
+    <!-- Gamer Preloader -->
+<div id="preloader">
+  <div class="loader-box text-center">
+    <!-- حلقة النيون المتحركة -->
+    <div class="cyber-spinner"></div>
+    
+    <!-- عنوان الموقع بلمعة نيون -->
+    <h2 class="gamer-title mt-4">GAMERS ZONE 🎮</h2>
+    
+    <!-- شريط التحميل -->
+    <div class="progress-bar-container mt-3">
+      <div class="progress-bar-fill" id="progress-fill"></div>
+    </div>
+    
+    <!-- نسبة التحميل المئوية -->
+    <p class="loading-text mt-2"><span id="load-percent">0</span>% LOADING...</p>
+  </div>
+</div>
         <div class="ticker-wrap bg-danger bg-opacity-10 border-bottom border-danger py-2 overflow-hidden">
       <div class="ticker-move d-flex align-items-center gap-4 text-nowrap">
         <div class="ticker-item">
@@ -369,7 +387,7 @@
             <!-- 13. Cities: Skylines -->
             <div class="card-compact review-card">
                 <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" class="card-compact-img" alt="Cities Skylines">
-                <div class="card-compact-body">
+    <div class="card-compact-body">
                     <div class="d-flex justify-content-between align-items-center mb-2">
                         <span class="badge-rating">9.6 / 10 ⭐</span>
                         <span class="badge-tag">بناء مدن</span>
@@ -411,6 +429,31 @@
     </footer>
 
     <script src="js/bootstrap.min.js"></script>
+    <script>
+  let percent = 0;
+  const loadPercent = document.getElementById('load-percent');
+  const progressFill = document.getElementById('progress-fill');
+  const preloader = document.getElementById('preloader');
 
+  // العداد بيمشي أبطأ عشان ياخد وقته
+  const timer = setInterval(() => {
+    // بيزود النسبة المئوية بمقدار بسيط (من 1 إلى 3 فقط في كل خطوة)
+    percent += Math.floor(Math.random() * 3) + 1; 
+    
+    if (percent > 100) percent = 100;
+
+    loadPercent.innerText = percent;
+    progressFill.style.width = percent + '%';
+
+    if (percent === 100) {
+      clearInterval(timer);
+      
+      // هنا بيستنى 1.5 ثانية (1500 مللي ثانية) بعد ما يوصل 100% قبل ما يختفي
+      setTimeout(() => {
+        preloader.classList.add('preloader-hidden');
+      }, 1500); 
+    }
+  }, 200); // الرقم ده (100) هو سرعة العداد، لو عايزه أبطأ كمان كبّره لـ 150 أو 200
+</script>
 </body>
 </html>
